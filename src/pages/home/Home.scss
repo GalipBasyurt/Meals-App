@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+.home {
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .search {
+    width: 50%;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      width: 70%;
+      height: 40px;
+      border-radius: 10px 0px 0px 10px;
+      outline: none;
+      border: 2px solid #c70039;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    button {
+      width: 15%;
+      padding: 10px 18px;
+      border-radius: 0px 15px 15px 0px;
+      border: none;
+      background-color: #c70039;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+    }
+  }
+
+  .meals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 25px;
+
+    .meal {
+      // background-color: #eee;
+      border-radius: 10px;
+      // padding: 10px;
+      position: relative;
+      width: 300px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      margin-bottom: 10px;
+
+      &-img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      &-info {
+        padding: 15px;
+        text-align: center;
+
+        .meal-name {
+          margin-bottom: 5px;
+          color: #c70039;
+          font-size: 20px;
+        }
+
+        .meal-category {
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        .meal-country {
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 8px;
+        }
+
+        .detail-btn {
+          background-color: #c70039;
+          border: none;
+          color: white;
+          font-size: 17px;
+          padding: 7px 15px;
+          border-radius: 8px;
+          cursor: pointer;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
